@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NotePadMMO</title>
+		<meta charset="latin1">
+		<style>
+				body, html {
+					margin: 0;
+					padding: 0;
+					border: 0;
+					width: 100vw;
+					height: 100vh;
+					overflow: auto;
+				}
+				body{
+					-ms-overflow-style: none;
+					scrollbar-width: none;
+				}
+				body::-webkit-scrollbar {
+					width: 0;
+					heigth: 0;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="opening" style="padding: 10px; border: 4px solid black; width: 80vw; height: 80vh; position: absolute; left: 10%; top: 10%; background-color: white; border-radius: 10px;">
+			<h1 style="margin-top: 0; margin-bottom: 10px;">NotePadMMO</h1>
+			<p>NotePadMMO is a online free multiuser document. Anyone can type and you'll see their edits in real time on your screen. Move with arrow keys. <br>Note:</p>
+			<ul>
+				<li>this relies on raw key capture, so mobile support is limited unless you attach a keyboard (mobile keyboad doesn't pop up).</li>
+				<li>Due to the fact that this display an entire megabyte of text (thats before browser objects ballon the actuall ram usage), it may lag on low end hardware.</li>
+				<li>Im not responsible for any user made content.</li>
+				<li>Don't expect perfect uptime, this is a small scale project subject to my personal life.</li>
+				<li>If the server unexpectedly goes down (ex: power outage, somone trips over my power cable, ect.), up to 100 seconds of edits will be lost, but all before that will be perserved.</li>
+				<li>Dont be mad if I ever decide to take this down, its just a small personal project.</li>
+				<li>Your edits show up on your screen as the server disributes them, not as you type, so there will be a slight delay (you see your edits the same time others do).</li>
+			</ul>
+			<button style="border: 2px solid black; border-radius: 5px; background-color: white;" onclick="document.getElementById('opening').style.display = 'none';">Let's GO!</button>
+		</div>
+		<p id="display" style="white-space: pre-wrap; word-break: break-all; font-family: monospace; border: 0; border-radius: 0; width: 100vw; height: 100vh;"></p>
+		<script src="main.js"></script>
+	</body>
+</html>
